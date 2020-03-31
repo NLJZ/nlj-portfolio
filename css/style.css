@@ -31,10 +31,13 @@ nav a {
   color: #fff;
   width: 1.6em;
   height: 1.6em;
-  background-color: #333;
+  background-color: rgb(245, 18, 211);
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  border-radius: 50%;
+  font-family: courier;
+  font-weight: normal;
 }
 
 #nav-logo {
@@ -47,4 +50,12 @@ nav a {
   font-weight: 900;
   font-size: 1.5em;
   text-transform: uppercase;
+}
+
+.toggler {
+  width: 0.7rem;
+  height: 0.7rem;
+  margin-left: 0.5rem;
+  background-color: #222;
+  clip-path: polygon(100% 17%, 0 17%, 50% 70%);
 }
