@@ -141,9 +141,9 @@ ul {
   background-blend-mode: lighten;
 }
 
-.hide {
+/* .hide {
   display: none;
-}
+} */
 
 .about-content {
   /* border: 1px solid #fff; */
@@ -216,6 +216,8 @@ ul {
   padding: 1rem;
 }
 
+/* work styles */
+
 #work {
   height: 100%;
   min-height: 100vh;
@@ -260,6 +262,8 @@ ul {
   display: flex;
   align-items: center;
 }
+
+/* contact styles */
 
 #contact {
   height: 100%;
