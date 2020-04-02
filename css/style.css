@@ -1,81 +1,279 @@
 body {
   font-family: "Nunito Sans", "futura", helvetica, sans-serif;
-  margin-top: 50px;
-  padding-bottom: 200vh;
   height: 100%;
   width: 100%;
-  background-color: #222;
+  background-color: #111;
+  color: #fff;
 }
-
-.container {
-  max-width: 720px;
-}
-
-/* Navigation Bar */
 
 nav {
-  background-color: #fff;
-  border-bottom: 1px solid #888;
+  background-color: #111;
+  border-bottom: 1px solid #333;
 }
 
-nav a {
-  text-transform: uppercase;
-  color: #333;
-  font-weight: 700;
+nav .container {
+  max-width: 600px;
 }
 
-.nav-item:hover {
-  color: rgb(72, 149, 198);
-  transition: 0.5s;
+.navbar {
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+
+a {
+  text-transform: lowercase;
+  color: #fff;
+}
+
+a:hover {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px red solid;
+}
+
+hr {
+  border-color: #ccc;
+  margin-right: 50%;
+}
+
+.underline {
   text-decoration: underline;
 }
 
-.navbar-brand {
-  margin: 0;
-  display: flex;
-  justify-content: space-between;
-  width: 4.8em;
+p {
+  padding-top: 1rem;
 }
 
-.logo {
-  color: #fff;
-  width: 1.5em;
-  height: 1.5em;
-  background-color: rgb(72, 149, 198);
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: normal;
+#home,
+#about,
+#work,
+#contact {
+  padding-top: 6rem;
+  margin-bottom: 7rem;
+  border-bottom: 1px solid #333;
 }
 
-#nav-logo {
-  margin: 0 4em 0 0;
-  padding: 0;
-  width: 12em;
-  display: flex;
-  justify-content: space-between;
-}
-
-.toggler {
-  width: 0.7rem;
-  height: 0.7rem;
-  margin-left: 0.5rem;
-  background-color: #222;
-  clip-path: polygon(100% 17%, 0 17%, 50% 70%);
-}
+/* home page */
 
 .splash {
   height: 100vh;
   width: 100vw;
-  color: #444;
   display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: #fff;
+  background-image: url("../img/handsandkeyboard.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: contain;
+  background-blend-mode: lighten;
+  background-color: #111;
+  padding: 4rem;
+}
+
+.splash .container {
+  max-width: 600px;
 }
 
 .logo-image {
   width: 100%;
-  margin-bottom: 2rem;
   opacity: 0.9;
+}
+
+.text-holder {
+  color: #eee;
+  border-radius: 0.3rem;
+  display: flex;
+  justify-content: left;
+}
+
+h1,
+h4,
+ul {
+  max-width: max-content;
+  padding: 0;
+  color: #eee;
+  font-size: 2rem;
+}
+
+.text-holder h4 {
+  font-size: 1.5rem;
+}
+
+.text-holder ul {
+  margin-left: 1rem;
+  line-height: 2.2rem;
+}
+
+.text-holder li {
+  padding: 0 1rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .text-holder ul {
+    margin-top: 2rem;
+  }
+}
+
+.text-holder ul a {
+  font-size: 1.5rem;
+}
+
+.container.opaque,
+ul {
+  background-color: #111;
+  opacity: 0.8;
+  border-radius: 3%;
+  padding: 0;
+}
+
+/* about section */
+
+#about {
+  height: 100%;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #111;
+  background-image: url("../img/mousehand.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 70%;
+  background-blend-mode: lighten;
+}
+
+.hide {
+  display: none;
+}
+
+.about-content {
+  /* border: 1px solid #fff; */
+  width: 90%;
+  background-color: #111;
+  max-width: 800px;
+  border-radius: 0.4rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  position: relative;
+  opacity: 0.8;
+  padding-top: 1rem;
+}
+
+.about-menu a {
+  padding-left: 1rem;
+  line-height: 2rem;
+  text-decoration: underline;
+}
+
+.about-menu a:hover {
+  border: none;
+  color: red;
+}
+
+.name-about {
+  position: absolute;
+  transform: rotate(-90deg);
+  top: 50%;
+  left: -5.2rem;
+  opacity: 0.8;
+  font-size: 1.2rem;
+}
+
+.main-about-content {
+  background-color: #111;
+  height: 100%;
+  color: #ddd;
+  padding: 2rem;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.skills,
+.info,
+.links,
+.container.opaque.about-top {
+  padding-left: 0rem;
+}
+
+.fab,
+.fas {
+  font-size: 3rem;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+  display: inline-block;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+}
+
+.links h5 {
+  padding: 0 2rem 0 0;
+  margin: 0;
+}
+
+.links i {
+  padding: 1rem;
+}
+
+#work {
+  height: 100%;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #111;
+  background-image: url("../img/coffeehand.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: 80%;
+  background-blend-mode: lighten;
+}
+
+.main-work-content {
+  max-width: 800px;
+}
+
+.work-item {
+  object-fit: cover;
+}
+
+.work-item img {
+  max-width: 250px;
+  max-height: 250px;
+  filter: grayscale(100%);
+}
+
+.work-item img:hover {
+  filter: none;
+  transform: scale(1.1);
+  transition: 0.6s;
+}
+
+.main-work-content h1 {
+  padding-bottom: 3rem;
+}
+
+.main-work-content.row {
+  align-self: center;
+}
+
+.work-holder {
+  display: flex;
+  align-items: center;
+}
+
+#contact {
+  height: 100%;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #111;
+  background-image: url("../img/envelophand.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 50%;
+  background-blend-mode: lighten;
+}
+
+#contact a:hover {
+  color: red;
+  text-decoration: underline;
 }

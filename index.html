@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="./img/nljicon.png" />
+    <script
+    src="https://kit.fontawesome.com/75f6c89321.js"
+    crossorigin="anonymous"
+  ></script>
     <!-- Bootstrap -->
     <link
       rel="stylesheet"
@@ -13,53 +18,94 @@
       href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap"
       rel="stylesheet"
     />
-    <!-- Site Specific -->
+    <!-- My Styles -->
     <link rel="stylesheet" href="./css/style.css" />
     <title>
       NLJ
     </title>
   </head>
   <body>
-    <div class="container-fluid splash">
-      <div class="container white">
-        <img src="./img/nlj.png" class="logo-image" />
-        <h2>Nathan Lee Johnson</h2>
-        <h4>Web Developer.</h4>
+    <nav class="navbar fixed-top navbar-expand navbar-dark">
+      <div class="container justify-content-end">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="#home">Home</a>
+          <a class="nav-item nav-link" href="#about">About</a>
+          <a class="nav-item nav-link" href="#work">Work</a>
+          <a class="nav-item nav-link" href="#contact">Contact</a>
+        </div>
       </div>
     </div>
-
-    <nav class="fixed-top navbar navbar-expand">
-      <div class="container">
-        <!-- <div id="nav-logo">
-          <a class="navbar-brand" href="#">
-            <span class="logo">N</span>
-            <span class="logo">L</span>
-            <span class="logo">J</span>
-          </a>
-        </div> -->
-
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav ml-auto">
-            <a class="nav-item nav-link" href="#about">About</a>
-            <a class="nav-item nav-link" href="#projects">Projects</a>
-            <a class="nav-item nav-link" href="#contact">Contact</a>
+    </nav>
+    <div class="container-fluid splash" id="home">
+      <div class="container text-holder">
+        <div class="row">
+          <div class="col-12">
+            <div class="container opaque">
+              <h1>Nathan Johnson</h1>
+              <h4>Web Developer.</h4>
+            </div>
           </div>
         </div>
       </div>
-    </nav>
+    </div>
 
+    <div class="container-fluid" id="about">
+      <div class="container about-content">
+        <!-- <div class="name-about">Nathan Johnson</div> -->
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="container about-top">
+              <h1 class="underline">About</h1>
+            </div>
+          </div>
+          <div class="container main-about-content">
+            <div class="container info">
+              <h5>I am a Berlin-based web developer.</h5>
+            </div>
+            <div class="container skills">
+              <p><i class="fab fa-html5"></i
+              ><i class="fab fa-css3-alt"></i><i class="fab fa-js"></i></i
+              ><i class="fab fa-react"></i></i><i class="fab fa-adobe"></i><i class="fas fa-camera-retro"></i></p>
+            </div>
+            <div class="container links">
+              <h5>Find me: </h5> <a href="https://github.com/NLJZ" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/nathan-johnson-860436146/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid" id="work">
+      <div class="container main-work-content">
+        <h1 class="underline">Work</h1>
+        <div class="work-holder">
+        <div class="row d-flex">
+          <div class="col-md-4 work-item"><img class="img-fluid" src="./img/szim.jpg"><p>Designer szim.</p></div>
+          <div class="col-md-4 work-item"><img class="img-fluid" src="./img/elzi.jpg"><p>Sound artist Elena Zieser.</p></div>
+          <div class="col-md-4 work-item"><img class="img-fluid" src="./img/nathanimation.jpg"><p>Personal Site of CSS Animation.</p></div>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <div class="container-fluid" id="contact">
+      <div class="container main-work-content">
+        <h1 class="underline">Contact</h1>
+        <a href="mailto:johnson.nathan.lee@gmail.com"><h2>johnson.nathan.lee at gmail.com</h2></a>
+        <div class="work-holder">
+          
+        <div class="row d-flex">
+          
+        </div>
+      </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="./bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
   </body>
 </html>
