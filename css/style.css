@@ -242,11 +242,13 @@ ul {
   max-width: 250px;
   max-height: 250px;
   filter: grayscale(100%);
+  opacity: 0.8;
 }
 
 .work-item img:hover {
   filter: none;
   transform: scale(1.1);
+  opacity: 1;
   transition: 0.6s;
 }
 
